@@ -9,8 +9,9 @@ namespace ClientMaster
 {
     class PasswordHandler
     {
-        public static string[] ReadPasswordFile(String filename)
+        public static List<UserInfo> ReadPasswordFile(String filename)
         {
+            List<UserInfo> result = new List<UserInfo>();
 
             FileStream fs = new FileStream(filename, FileMode.Open, FileAccess.Read);
             using (StreamReader sr = new StreamReader(fs))
@@ -20,10 +21,12 @@ namespace ClientMaster
                 {
                     string line = sr.ReadLine();
                     string[] parts = line.Split(":".ToCharArray());
+                    UserInfo userInfo = new UserInfo(parts[0], parts[1]);
                     
-                    return parts;
+                    result.Add(userInfo);
                 }
-                
+
+                return result;
             }
         }
     }
