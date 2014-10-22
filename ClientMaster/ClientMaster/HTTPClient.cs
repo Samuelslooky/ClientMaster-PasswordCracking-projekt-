@@ -19,13 +19,12 @@ namespace ClientMaster
         /// En klasse som har til ansvar at oprette forbindelse til Server slaverne
         /// </summary>
         
-
         public void Socket()
         {
             //Her oprettes en TCPClient samt en networkstream, StreamWriter og Streamreader
             Console.ReadLine();
 
-            TcpClient clientSocket = new TcpClient("10.154.1.251", 50607);
+            TcpClient clientSocket = new TcpClient("10.154.1.251", 8080);
 
             Stream ns = clientSocket.GetStream();  //GET NETWORKSTREAM
             StreamWriter sw = new StreamWriter(ns);

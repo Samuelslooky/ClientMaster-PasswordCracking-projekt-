@@ -7,3 +7,9 @@ C:\Users\Andreas\Dropbox\Distributed password Cracking projekt (Morten, Kenneth,
 C:\Users\Andreas\Desktop\ClientMaster\ClientMaster\bin\Debug\ClientMaster.exe.config
 C:\Users\Andreas\Desktop\ClientMaster\ClientMaster\obj\Debug\ClientMaster.exe
 C:\Users\Andreas\Desktop\ClientMaster\ClientMaster\obj\Debug\ClientMaster.pdb
+C:\Users\Andreas\Desktop\ClientMasterGitHub\ClientMaster\ClientMaster\bin\Debug\ClientMaster.exe.config
+C:\Users\Andreas\Desktop\ClientMasterGitHub\ClientMaster\ClientMaster\obj\Debug\ClientMaster.exe
+C:\Users\Andreas\Desktop\ClientMasterGitHub\ClientMaster\ClientMaster\obj\Debug\ClientMaster.pdb
+C:\Users\Andreas\Desktop\ClientMasterGitHub\ClientMaster\ClientMaster\bin\Debug\ClientMaster.exe
+C:\Users\Andreas\Desktop\ClientMasterGitHub\ClientMaster\ClientMaster\bin\Debug\ClientMaster.pdb
+C:\Users\Andreas\Desktop\ClientMasterGitHub\ClientMaster\ClientMaster\obj\Debug\ClientMaster.csprojResolveAssemblyReference.cache
