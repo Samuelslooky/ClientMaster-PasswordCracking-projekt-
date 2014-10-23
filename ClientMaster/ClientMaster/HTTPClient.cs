@@ -10,6 +10,8 @@ namespace ClientMaster
 {
     public class HTTPClient
     {
+        private const string MethodField = "PUT ";
+        private const string FileDistination = "C:\Users\Andreas\Desktop\ClientMasterGitHub\ClientMaster\ClientMaster\bin\Debug\passwords.txt"
 
         public HTTPClient()
         {
@@ -29,8 +31,10 @@ namespace ClientMaster
 
             NetworkStream ns = clientSocket.GetStream();  //GET NETWORKSTREAM
 
-            OpenWriter(ns);
+            OpenWriter(ns, this.EstablishConnection());
             string theResponse = OpenReader(ns);
+
+            //OpenWriter(ns, this.AssembleHttpRequest());
 
             Console.WriteLine("Server answer: " + theResponse);
 
@@ -38,18 +42,23 @@ namespace ClientMaster
             clientSocket.Close();
         }
 
-        private string AssembleHttpMessage()
+        private string EstablishConnection()
+        {
+            return "Hi";
+        }
+
+        private string AssembleHttpRequest()
         {
 
-             return "GET " + "\\" + "CrackedPasswords.txt" + "HTTP/1.0";
+             return MethodField + "\\" + FileDistination + "HTTP/1.0";
 
         }
 
-        private void OpenWriter(NetworkStream nsw)
+        private void OpenWriter(NetworkStream nsw, string Message)
         {
             var sw = new StreamWriter(nsw);
             sw.AutoFlush = true;
-            sw.Write(this.AssembleHttpMessage());
+            sw.Write(Message);
         }
 
         private string OpenReader(NetworkStream nsw)
