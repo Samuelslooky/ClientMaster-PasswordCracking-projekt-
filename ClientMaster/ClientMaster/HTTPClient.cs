@@ -32,8 +32,14 @@ namespace ClientMaster
 
             NetworkStream ns = clientSocket.GetStream();  //GET NETWORKSTREAM
 
+          
            
-            OpenWriter(ns, this.EstablishConnection());
+           
+           OpenWriter(ns, this.EstablishConnection());
+
+          
+
+           
            
             ns.Close();
             clientSocket.Close();
@@ -57,8 +63,14 @@ namespace ClientMaster
         {
             var sr = new StreamReader(nsw);
             string getResponse = sr.ReadLine();
-
-            return getResponse;
+            if (getResponse != null)
+            {
+                return getResponse;
+            }
+            else
+            {
+                return "Fejl";
+            }
         }
 
 
