@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Sockets;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -28,18 +29,15 @@ namespace ClientMaster
             //Her oprettes en TCPClient samt en networkstream, StreamWriter og Streamreader
             Console.ReadLine();
 
-            TcpClient clientSocket = new TcpClient("localhost", 8080);
+            TcpClient clientSocket = new TcpClient("10.154.2.29", 65080);
 
             NetworkStream ns = clientSocket.GetStream();  //GET NETWORKSTREAM
-
-          
            
-           
-           OpenWriter(ns, this.EstablishConnection());
+            OpenWriter(ns, this.EstablishConnection());
 
-          
+            string theMessage = OpenReader(ns);
 
-           
+            Console.WriteLine("Message recieved: " + theMessage);
            
             ns.Close();
             clientSocket.Close();
