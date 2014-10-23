@@ -12,8 +12,8 @@ namespace ClientMaster
 
         public void OpenDictionary()
         {
-            string[] userInfos = PasswordHandler.ReadPasswordFile("passwords.txt");
-            using (FileStream fs = new FileStream("webster-dictionary.txt", FileMode.Open, FileAccess.Read))
+            //string[] userInfos = PasswordHandler.ReadPasswordFile("passwords.txt");
+            //using (FileStream fs = new FileStream("webster-dictionary.txt", FileMode.Open, FileAccess.Read))
         }
         
         

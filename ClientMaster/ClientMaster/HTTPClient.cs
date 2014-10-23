@@ -11,7 +11,8 @@ namespace ClientMaster
     public class HTTPClient
     {
         private const string MethodField = "PUT ";
-        private const string FileDistination = "C:\Users\Andreas\Desktop\ClientMasterGitHub\ClientMaster\ClientMaster\bin\Debug\passwords.txt"
+        StreamWriter sw;
+ 
 
         public HTTPClient()
         {
@@ -27,17 +28,13 @@ namespace ClientMaster
             //Her oprettes en TCPClient samt en networkstream, StreamWriter og Streamreader
             Console.ReadLine();
 
-            TcpClient clientSocket = new TcpClient("10.154.1.251", 8080);
+            TcpClient clientSocket = new TcpClient("localhost", 8080);
 
             NetworkStream ns = clientSocket.GetStream();  //GET NETWORKSTREAM
 
+           
             OpenWriter(ns, this.EstablishConnection());
-            string theResponse = OpenReader(ns);
-
-            //OpenWriter(ns, this.AssembleHttpRequest());
-
-            Console.WriteLine("Server answer: " + theResponse);
-
+           
             ns.Close();
             clientSocket.Close();
         }
@@ -47,18 +44,13 @@ namespace ClientMaster
             return "Hi";
         }
 
-        private string AssembleHttpRequest()
-        {
-
-             return MethodField + "\\" + FileDistination + "HTTP/1.0";
-
-        }
-
+   
         private void OpenWriter(NetworkStream nsw, string Message)
         {
             var sw = new StreamWriter(nsw);
             sw.AutoFlush = true;
             sw.Write(Message);
+            
         }
 
         private string OpenReader(NetworkStream nsw)

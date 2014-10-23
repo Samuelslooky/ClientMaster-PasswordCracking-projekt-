@@ -13,3 +13,9 @@ C:\Users\Andreas\Desktop\ClientMasterGitHub\ClientMaster\ClientMaster\obj\Debug\
 C:\Users\Andreas\Desktop\ClientMasterGitHub\ClientMaster\ClientMaster\bin\Debug\ClientMaster.exe
 C:\Users\Andreas\Desktop\ClientMasterGitHub\ClientMaster\ClientMaster\bin\Debug\ClientMaster.pdb
 C:\Users\Andreas\Desktop\ClientMasterGitHub\ClientMaster\ClientMaster\obj\Debug\ClientMaster.csprojResolveAssemblyReference.cache
+C:\Users\Herprit\Desktop\ClientMaster-PasswordCracking-projekt-\ClientMaster\ClientMaster\bin\Debug\ClientMaster.exe.config
+C:\Users\Herprit\Desktop\ClientMaster-PasswordCracking-projekt-\ClientMaster\ClientMaster\obj\Debug\ClientMaster.exe
+C:\Users\Herprit\Desktop\ClientMaster-PasswordCracking-projekt-\ClientMaster\ClientMaster\obj\Debug\ClientMaster.pdb
+C:\Users\Herprit\Desktop\ClientMaster-PasswordCracking-projekt-\ClientMaster\ClientMaster\obj\Debug\ClientMaster.csprojResolveAssemblyReference.cache
+C:\Users\Herprit\Desktop\ClientMaster-PasswordCracking-projekt-\ClientMaster\ClientMaster\bin\Debug\ClientMaster.exe
+C:\Users\Herprit\Desktop\ClientMaster-PasswordCracking-projekt-\ClientMaster\ClientMaster\bin\Debug\ClientMaster.pdb
